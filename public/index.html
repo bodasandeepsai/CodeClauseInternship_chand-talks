@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chand-talks</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+
+</head>
+<body>
+
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>join chatroom</h2>
+                <div class="form-input">
+                    <label>User name</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">join</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen ">
+            <div class="header">
+                <div class="logo">chand-talks</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="messages">
+                
+
+            </div>
+            <div class="typebox">
+                <input type="text" id= "message-input" placeholder="Type any Message">
+                <button id="send-message"><a><i class="fa-solid fa-paper-plane fa-2xl"></i></a></button>
+                
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/038683c398.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
